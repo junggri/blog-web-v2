@@ -1,0 +1,30 @@
+@import "./variables";
+
+.appContainer {
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+  @media(max-width: 715px) {
+    padding-top: 40px;
+  }
+
+  .contentBody {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    .none{
+      p{
+        overflow: auto;
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 20px;
+    height: 40px;
+  }
+}
+

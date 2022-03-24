@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.tagItem {
+  height: 25px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s all;
+  font-size: 14px;
+}
+
+.clicked {
+  transition: 0.2s all;
+  background: $header-icon-link;
+  color: white;
+  //border: 1px solid white;
+}

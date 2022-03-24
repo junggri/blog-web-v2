@@ -1,0 +1,44 @@
+.ResumeInfo {
+  width: 100%;
+
+  .header {
+    width: 100%;
+    //border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    //margin-top: 40px;
+
+    h1 {
+      position: relative;
+      font-size: 2rem;
+      background: white;
+      padding-bottom: 4px;
+    }
+  }
+
+  div {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    span:nth-child(1) {
+      width: 10px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      margin-right: 40px;
+      display: inline-block;
+      color: rgba(0, 0, 0, .5);
+    }
+
+    span:nth-child(2) {
+      font-weight: 600;
+    }
+
+  }
+}

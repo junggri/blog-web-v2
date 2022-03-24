@@ -1,0 +1,44 @@
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  span {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+}
+
+
+.visitor {
+  z-index: 19;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: white;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  position: absolute;
+  left: 16px;
+  font-size: 12px;
+  top: 50px;
+  transform: translateX(-200px);
+
+
+  div:nth-child(1) {
+    margin-bottom: 5px;
+  }
+
+  div {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+
+
+    span:nth-child(2) {
+      font-weight: 300;
+    }
+  }
+}

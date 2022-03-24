@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.replyInputBox {
+
+  .textarea {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.2s all;
+
+    &:focus {
+      border: 1px solid $highlight-blue;
+    }
+  }
+
+  .buttonBox {
+    background: transparent;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+
+    .inputBox {
+      display: flex;
+      margin-right: 15px;
+
+      div {
+        margin-right: 15px;
+      }
+    }
+  }
+
+}
+

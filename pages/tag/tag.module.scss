@@ -1,0 +1,103 @@
+@import "../../src/styles/variables";
+.tagPage {
+  width: 800px;
+  margin: 0 auto;
+  @media(max-width: 800px) {
+    width: 100%;
+  }
+
+  .tagBox {
+    @include responsive;
+    margin: 0 auto;
+    padding: 1rem;
+
+    .header {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      color: $nav-text;
+    }
+
+    .tagContainer {
+      gap: 15px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .notRelated {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 300px;
+
+    @media(max-width: 800px) {
+      margin-top: 150px
+    }
+
+    span {
+      display: flex;
+      transform: rotate(45deg);
+      font-size: 12rem;
+
+      svg {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .relatedPost {
+    @include responsive;
+    margin: 0 auto;
+    margin-top: 60px;
+
+
+    .relatedHeader {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .postBox {
+      margin-top: 20px;
+
+      .postItem {
+        padding: 12px 20px;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+          transition: 0.2s all;
+          display: block;
+          width: 4px;
+          content: "";
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: $header-icon-link;
+          opacity: 0.4;
+        }
+
+        &:hover {
+          &:before {
+            opacity: 1;
+          }
+        }
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+          font-weight: 300;
+          margin-top: 5px;
+        }
+      }
+  }
+}
+}

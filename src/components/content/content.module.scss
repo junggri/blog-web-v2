@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: center;
+  margin: -1rem;
+  @include responsive;
+  @media(max-width: 700px) {
+    margin: 0;
+    width: 100%;
+    a {
+      width: 100%;
+    }
+  }
+}
+

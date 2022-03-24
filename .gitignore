@@ -1,0 +1,6 @@
+.next
+deploy
+node_modules
+env
+Dockerfile
+next.config.js

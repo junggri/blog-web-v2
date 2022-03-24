@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.button {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: $header-icon-link;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+
+  canvas {
+    background: none
+  }
+
+  .font {
+    position: absolute;
+    color: white;
+    background: transparent;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
