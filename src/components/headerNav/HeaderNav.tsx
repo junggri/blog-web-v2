@@ -41,7 +41,6 @@ const HeaderNav: FC<Props> = memo(() => {
     return () => window.removeEventListener("click", setFalse);
   }, [click]);
 
-
   return (
     <Layout className={styles.nav}>
       <div className={styles.left}>
@@ -58,6 +57,15 @@ const HeaderNav: FC<Props> = memo(() => {
               <span onClick={onClickTagButton}>태그</span>
             </a>
           </Link>
+        </div>
+        <div onClick={() => {
+          alert("준비중입니다.")
+        }}>
+          {/*<Link href={"https://brunch.co.kr/@0ab6a1f3d75e468"}>*/}
+          {/*  <a href="https://brunch.co.kr/@0ab6a1f3d75e468" target={"_blank"}>*/}
+          <span>브런치</span>
+          {/*</a>*/}
+          {/*</Link>*/}
         </div>
         <div>
           <Link href={"/youtube"}>

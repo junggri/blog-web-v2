@@ -42,6 +42,9 @@ const TagPage: FC<Props> = memo(() => {
     }
 
     return tag.post.map((e) => {
+      if (!e.open) {
+        return
+      }
       return (
         <Link href={`/post/${e.hashId}`} key={e.hashId}>
           <a>
@@ -65,9 +68,9 @@ const TagPage: FC<Props> = memo(() => {
         </div>
         {tag &&
         <div className={styles.relatedPost}>
-            <div className={styles.postBox}>
-              {renderPost}
-            </div>
+           <div className={styles.postBox}>
+             {renderPost}
+           </div>
         </div>
         }
         {!tag &&
